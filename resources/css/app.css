@@ -5,9 +5,9 @@
 :root {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
 
-    --primary: #89c28b;
-    --primary-light: #4CAF50;
-    --secondary: #81C784;
+    --primary: #B87589;
+    --primary-light: #B87589;
+    --secondary: #B87589;
     --bg: #F4FBF5;
     --card: #FFFFFF;
     --border: #DDEEDF;
@@ -22,7 +22,7 @@ body{
 
 /* Navbar */
 .navbar{
-    background: linear-gradient(90deg,#8dda91,#a4dda7)!important;
+    background: linear-gradient(90deg,#B87589,#B87589)!important;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
@@ -54,7 +54,7 @@ body{
 }
 
 .table thead th{
-    color:#90c593;
+    color:#B87589;
     border:none;
     font-weight:600;
 }
@@ -63,66 +63,147 @@ body{
     background:#F1F8F4;
 }
 
-/* Buttons */
-.btn-primary{
-    background:#81b684;
-    border:none;
+/* =========================
+   TEMA SOFT PINK
+   ========================= */
+
+body {
+    background-color: #FFF7F9;
+    color: #5A464C;
 }
 
-.btn-primary:hover{
-    background:#91db94;
+/* Judul */
+.judul-produk {
+    color: #B87589;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
-.btn-warning{
-    background:#66BB6A;
-    border:none;
-    color:white;
+
+/* CREATE */
+.btn-create {
+    background-color: #E8A0B4 !important;
+    border-color: #E8A0B4 !important;
+    color: white !important;
+    border-radius: 8px;
 }
 
-.btn-warning:hover{
-    background:#80cc82;
-    color:white;
+.btn-create:hover {
+    background-color: #D8899F !important;
+    border-color: #D8899F !important;
+    color: white !important;
 }
 
-.btn-danger{
-    border:none;
-    background:#EF5350;
+
+/* SEARCH */
+.btn-search {
+    background-color: #DFA6B5 !important;
+    border-color: #DFA6B5 !important;
+    color: white !important;
 }
 
-.btn-danger:hover{
-    background:#E53935;
+.btn-search:hover {
+    background-color: #CC8D9F !important;
+    border-color: #CC8D9F !important;
+    color: white !important;
 }
 
-/* Form */
-.form-control{
-    border-radius:12px;
-    border:1px solid #D7EAD9;
+
+/* INPUT SEARCH */
+.search-box .form-control {
+    border: 1px solid #F0D4DC;
 }
 
-.form-control:focus{
-    border-color:#66BB6A;
-    box-shadow:0 0 0 .2rem rgba(76,175,80,.15);
+.search-box .form-control:focus {
+    border-color: #E8A0B4;
+    box-shadow: 0 0 0 0.2rem rgba(232, 160, 180, 0.2);
 }
 
-/* Pagination */
-.pagination .page-link{
-    color:#94ec99;
+
+/* TABEL */
+.table {
+    background-color: white;
 }
 
-.pagination .active .page-link{
-    background:#92dd96;
-    border-color:#84cc88;
+.table thead {
+    background-color: #F6DDE4;
 }
 
-/* Alert */
-.alert-success{
-    border:none;
-    border-radius:12px;
+.table thead th {
+    color: #8F6370;
+    border: none;
 }
 
-/* Page Title */
-h1{
-    font-weight:700;
-    color:#a1d4a3;
-    margin-bottom:25px;
+.table tbody tr:hover {
+    background-color: #FFF2F5;
+}
+
+
+/* FOTO */
+.foto-produk {
+    border: 2px solid #F0D4DC;
+    border-radius: 8px;
+}
+
+
+/* DETAIL */
+.btn-detail {
+    background-color: #F1BCC9 !important;
+    border-color: #F1BCC9 !important;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.btn-detail:hover {
+    background-color: #DFA0B4 !important;
+    border-color: #DFA0B4 !important;
+    color: white !important;
+}
+
+
+/* EDIT */
+.btn-edit {
+    background-color: #E5A6B8 !important;
+    border-color: #E5A6B8 !important;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.btn-edit:hover {
+    background-color: #CE8B9E !important;
+    border-color: #CE8B9E !important;
+    color: white !important;
+}
+
+
+/* HAPUS */
+.btn-hapus {
+    background-color: #C98F9F !important;
+    border-color: #C98F9F !important;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.btn-hapus:hover {
+    background-color: #B47788 !important;
+    border-color: #B47788 !important;
+    color: white !important;
+}
+
+
+/* PAGINATION */
+.pagination .page-link {
+    color: #C47F92;
+    border-color: #F0D4DC;
+}
+
+.pagination .page-link:hover {
+    background-color: #FBE8ED;
+    color: #A85F73;
+}
+
+.pagination .active .page-link {
+    background-color: #E8A0B4;
+    border-color: #E8A0B4;
+    color: white;
 }

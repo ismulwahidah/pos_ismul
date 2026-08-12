@@ -1,11 +1,12 @@
-<nav class="navbar navbar-expand-lg shadow-sm" style="background:#2E7D32;">
+<nav class="navbar navbar-expand-lg shadow-sm" style="background:#F8C8D8;">
     <div class="container">
 
-        <a class="navbar-brand fw-bold text-white" href="{{ route('dashboard') }}">
-            🌿 POS
+        <a class="navbar-brand fw-bold" style="color:#5F5F5F;" href="{{ route('dashboard') }}">
+             POS
         </a>
 
-        <button class="navbar-toggler bg-white"
+        <button class="navbar-toggler"
+                style="background:#E8E8E8;"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
@@ -20,7 +21,8 @@
             <ul class="navbar-nav ms-4">
 
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ Request::is('dashboard') ? 'fw-bold' : '' }}"
+                    <a class="nav-link {{ Request::is('dashboard') ? 'fw-bold' : '' }}"
+                       style="color:#5F5F5F;"
                        href="{{ route('dashboard') }}">
                         Dashboard
                     </a>
@@ -28,7 +30,8 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ Request::is('admin/users') ? 'fw-bold' : '' }}"
+                    <a class="nav-link {{ Request::is('admin/users') ? 'fw-bold' : '' }}"
+                       style="color:#5F5F5F;"
                        href="{{ route('admin.users') }}">
                         Users
                     </a>
@@ -36,7 +39,8 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ Request::is('produk*') ? 'fw-bold' : '' }}"
+                    <a class="nav-link {{ Request::is('produk*') ? 'fw-bold' : '' }}"
+                       style="color:#5F5F5F;"
                        href="{{ route('produk.index') }}">
                         Produk
                     </a>
@@ -44,7 +48,8 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ Request::is('penjualan*') ? 'fw-bold' : '' }}"
+                    <a class="nav-link {{ Request::is('penjualan*') ? 'fw-bold' : '' }}"
+                       style="color:#5F5F5F;"
                        href="{{ route('penjualan.index') }}">
                         Penjualan
                     </a>
@@ -59,7 +64,8 @@
 
                 @csrf
 
-                <button class="btn btn-light text-success fw-bold">
+                <button class="btn fw-bold"
+                        style="background:#E8E8E8; color:#5F5F5F;">
                     Logout
                 </button>
 

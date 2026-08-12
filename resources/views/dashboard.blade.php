@@ -7,79 +7,121 @@
 @include('layouts.navbar')
 
 <style>
+
     body {
-        background: #f5fbf7;
+        background: #F8F8F8;
+        color: #000;
     }
 
-    .page-title {
-        color: #2d6a4f;
-        font-weight: 700;
-    }
-
-    .section-title {
-        color: #2d6a4f;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    .card {
+    .dashboard-card {
         border: none;
-        border-radius: 12px;
+        border-radius: 14px;
         overflow: hidden;
-        box-shadow: 0 4px 15px rgba(45, 106, 79, 0.08);
-        transition: transform .2s ease, box-shadow .2s ease;
+        background: #FFFFFF;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
     }
 
-    .card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(45, 106, 79, 0.15);
-    }
 
-    .card-header {
-        font-weight: 600;
+    /* Header Card Soft Pink */
+
+    .pink-header {
+        background: #F8C8D8;
+        color: #000;
         border: none;
+        padding: 11px 16px;
     }
 
-    /* Varian Hijau Kustom */
-    .bg-green-primary {
-        background: #2d6a4f !important;
-        color: #ffffff !important;
+
+    /* Badge Peringatan */
+
+    .warning-badge {
+        background: #F8C8D8;
+        color: #000;
+        padding: 5px 9px;
+        border: 1px solid #E5AFC1;
     }
 
-    .bg-green-medium {
-        background: #40916c !important;
-        color: #ffffff !important;
+
+    /* Badge Kritis */
+
+    .critical-badge {
+        background: #F8C8D8;
+        color: #000;
+        padding: 5px 9px;
+        border: 1px solid #E5AFC1;
     }
 
-    .bg-soft-green {
-        background: #d8f3dc !important;
-        color: #1b4332 !important;
+
+    /* Stok Rendah */
+
+    .stock-badge {
+        background: #F8C8D8;
+        color: #000;
+        padding: 5px 8px;
+        border: 1px solid #E5AFC1;
     }
 
-    .bg-soft-green2 {
-        background: #b7e4c7 !important;
-        color: #1b4332 !important;
+
+    /* Stok Habis */
+
+    .critical-stock {
+        background: #F8C8D8;
+        color: #000;
+        padding: 5px 8px;
+        border: 1px solid #E5AFC1;
     }
 
-    .text-green-dark {
-        color: #1b4332 !important;
+
+    /* Table */
+
+    .dashboard-card .table {
+        margin-bottom: 0;
     }
 
-    .text-green-main {
-        color: #2d6a4f !important;
+    .dashboard-card .table thead th {
+        color: #000;
+        font-weight: 700;
+        border-bottom: 1px solid #E5E5E5;
+        background: #FFFFFF;
     }
 
-    /* Tabel */
-    .table thead {
-        background: #d8f3dc;
-        color: #2d6a4f;
+    .dashboard-card .table tbody td {
+        color: #000;
+        border-bottom: 1px solid #E5E5E5;
     }
 
-    .table-hover tbody tr:hover {
-        background: #eefbf1;
+    .dashboard-card .table tbody tr:hover {
+        background: #FFF1F5;
     }
+
+
+    /* Judul */
+
+    h1,
+    h2 {
+        color: #000;
+    }
+
+
+    /* Pagination */
+
+    .pagination .page-link {
+        color: #000;
+        border-color: #E5AFC1;
+    }
+
+    .pagination .page-link:hover {
+        background: #F8C8D8;
+        color: #000;
+    }
+
+    .pagination .active .page-link {
+        background: #F8C8D8;
+        border-color: #E5AFC1;
+        color: #000;
+    }
+
 </style>
-
 <div class="mb-4">
     <h2 class="page-title">
         Ringkasan Hari Ini 

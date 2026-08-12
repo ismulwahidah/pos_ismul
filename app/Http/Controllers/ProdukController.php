@@ -63,13 +63,11 @@ return redirect()->route('produk.index')
 ->with('success', 'Product created successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
+    public function show(Produk $produk)
+{
+    // Mengembalikan tampilan detail dengan membawa data $produk
+    return view('produk.show', compact('produk'));
+}
 
     /**
      * Show the form for editing the specified resource.

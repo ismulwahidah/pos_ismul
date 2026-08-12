@@ -9,7 +9,7 @@
 
 <style>
     body {
-        background: linear-gradient(135deg, #d8f3dc, #f1faee);
+        background: linear-gradient(135deg, #B87589, #f1faee);
         height: 100vh;
     }
 
@@ -22,7 +22,7 @@
     }
 
     .login-header {
-        background-color: #74c69d;
+        background-color: #B87589;
         color: white;
         font-weight: bold;
         font-size: 1.3rem;
@@ -36,16 +36,16 @@
 
     .form-control {
         border-radius: 10px;
-        border: 1px solid #b7e4c7;
+        border: 1px solid #B87589;
     }
 
     .form-control:focus {
-        border-color: #52b788;
-        box-shadow: 0 0 0 0.2rem rgba(82, 183, 136, 0.25);
+        border-color: #B87589;
+        box-shadow: 0 0 0 0.2rem rgba(184, 117, 137, 0.25);
     }
 
     .btn-green {
-        background-color: #52b788;
+        background-color: #B87589;
         border: none;
         border-radius: 10px;
         width: 100%;
@@ -55,7 +55,7 @@
     }
 
     .btn-green:hover {
-        background-color: #40916c;
+        background-color: #B87589;
     }
 
     .badge {
@@ -65,7 +65,7 @@
 
 <div class="card login-card text-center position-absolute top-50 start-50 translate-middle">
     <div class="login-header">
-        🌿 Login POS
+        Login POS
     </div>
 
     <div class="card-body">
