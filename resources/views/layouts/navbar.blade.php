@@ -39,6 +39,14 @@
 
 
                 <li class="nav-item">
+                    <a class="nav-link {{ Request::is('Jenis*') ? 'fw-bold' : '' }}"
+                       style="color:#5F5F5F;"
+                       href="{{ route('Jenis.index') }}">
+                        Jenis
+                    </a>
+
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {{ Request::is('produk*') ? 'fw-bold' : '' }}"
                        style="color:#5F5F5F;"
                        href="{{ route('produk.index') }}">

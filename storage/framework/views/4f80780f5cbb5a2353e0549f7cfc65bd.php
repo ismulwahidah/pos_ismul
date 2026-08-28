@@ -39,6 +39,14 @@
 
 
                 <li class="nav-item">
+                    <a class="nav-link <?php echo e(Request::is('Jenis*') ? 'fw-bold' : ''); ?>"
+                       style="color:#5F5F5F;"
+                       href="<?php echo e(route('Jenis.index')); ?>">
+                        Jenis
+                    </a>
+
+                </li>
+                <li class="nav-item">
                     <a class="nav-link <?php echo e(Request::is('produk*') ? 'fw-bold' : ''); ?>"
                        style="color:#5F5F5F;"
                        href="<?php echo e(route('produk.index')); ?>">
