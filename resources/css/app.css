@@ -1,3 +1,4 @@
+
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
@@ -5,205 +6,170 @@
 :root {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
 
-    --primary: #B87589;
-    --primary-light: #B87589;
-    --secondary: #B87589;
-    --bg: #F4FBF5;
+    --primary: #758db8;
+    --primary-light: #8FA6D1;
+    --secondary: #5F78A5;
+    --bg: #F4F7FC;
     --card: #FFFFFF;
-    --border: #DDEEDF;
-    --text: #2E3A2F;
+    --border: #D9E2F2;
+    --text: #2E3A4F;
 }
 
-body{
+body {
     font-family: var(--font-sans);
-    background: var(--bg);
-    color: var(--text);
+    background-color: #F4F7FC;
+    color: #2E3A4F;
 }
 
-/* Navbar */
-.navbar{
-    background: linear-gradient(90deg,#B87589,#B87589)!important;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, #758db8, #5F78A5);
+    box-shadow: 0 5px 20px rgba(60, 85, 125, 0.15);
 }
 
 .navbar .nav-link,
-.navbar-brand{
-    color:white!important;
+.navbar-brand {
+    color: white;
 }
 
-.navbar .nav-link:hover{
-    opacity:.8;
+.navbar .nav-link:hover {
+    opacity: 0.8;
 }
 
-/* Card */
-.card{
-    border:none;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.06);
+/* CARD */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(60, 85, 125, 0.08);
+    background-color: #FFFFFF;
 }
 
-/* Table */
-.table{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
+/* TABLE */
+.table {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.table thead{
-    background:#E8F5E9;
+.table thead {
+    background-color: #758db8;
 }
 
-.table thead th{
-    color:#B87589;
-    border:none;
-    font-weight:600;
+.table thead th {
+    color: white;
+    border: none;
+    font-weight: 600;
 }
 
-.table tbody tr:hover{
-    background:#F1F8F4;
+.table tbody tr:hover {
+    background-color: #EEF3FB;
 }
 
-/* =========================
-   TEMA SOFT PINK
-   ========================= */
-
-body {
-    background-color: #FFF7F9;
-    color: #5A464C;
-}
-
-/* Judul */
+/* JUDUL */
 .judul-produk {
-    color: #B87589;
+    color: #5F78A5;
     font-weight: 700;
     margin-bottom: 25px;
 }
 
-
 /* CREATE */
 .btn-create {
-    background-color: #E8A0B4 !important;
-    border-color: #E8A0B4 !important;
-    color: white !important;
+    background-color: #758db8;
+    border-color: #758db8;
+    color: white;
     border-radius: 8px;
 }
 
 .btn-create:hover {
-    background-color: #D8899F !important;
-    border-color: #D8899F !important;
-    color: white !important;
+    background-color: #5F78A5;
+    border-color: #5F78A5;
+    color: white;
 }
-
 
 /* SEARCH */
 .btn-search {
-    background-color: #DFA6B5 !important;
-    border-color: #DFA6B5 !important;
-    color: white !important;
+    background-color: #758db8;
+    border-color: #758db8;
+    color: white;
 }
 
 .btn-search:hover {
-    background-color: #CC8D9F !important;
-    border-color: #CC8D9F !important;
-    color: white !important;
+    background-color: #5F78A5;
+    border-color: #5F78A5;
+    color: white;
 }
-
 
 /* INPUT SEARCH */
 .search-box .form-control {
-    border: 1px solid #F0D4DC;
+    border: 1px solid #C9D6EA;
 }
 
 .search-box .form-control:focus {
-    border-color: #E8A0B4;
-    box-shadow: 0 0 0 0.2rem rgba(232, 160, 180, 0.2);
+    border-color: #758db8;
+    box-shadow: 0 0 0 0.2rem rgba(117, 141, 184, 0.2);
 }
-
-
-/* TABEL */
-.table {
-    background-color: white;
-}
-
-.table thead {
-    background-color: #F6DDE4;
-}
-
-.table thead th {
-    color: #8F6370;
-    border: none;
-}
-
-.table tbody tr:hover {
-    background-color: #FFF2F5;
-}
-
 
 /* FOTO */
 .foto-produk {
-    border: 2px solid #F0D4DC;
+    border: 2px solid #C9D6EA;
     border-radius: 8px;
 }
 
-
 /* DETAIL */
 .btn-detail {
-    background-color: #F1BCC9 !important;
-    border-color: #F1BCC9 !important;
-    color: white !important;
+    background-color: #758db8;
+    border-color: #758db8;
+    color: white;
     border-radius: 6px;
 }
 
 .btn-detail:hover {
-    background-color: #DFA0B4 !important;
-    border-color: #DFA0B4 !important;
-    color: white !important;
+    background-color: #5F78A5;
+    border-color: #5F78A5;
+    color: white;
 }
-
 
 /* EDIT */
 .btn-edit {
-    background-color: #E5A6B8 !important;
-    border-color: #E5A6B8 !important;
-    color: white !important;
+    background-color: #758db8;
+    border-color: #758db8;
+    color: white;
     border-radius: 6px;
 }
 
 .btn-edit:hover {
-    background-color: #CE8B9E !important;
-    border-color: #CE8B9E !important;
-    color: white !important;
+    background-color: #5F78A5;
+    border-color: #5F78A5;
+    color: white;
 }
-
 
 /* HAPUS */
 .btn-hapus {
-    background-color: #C98F9F !important;
-    border-color: #C98F9F !important;
-    color: white !important;
+    background-color: #758db8;
+    border-color: #758db8;
+    color: white;
     border-radius: 6px;
 }
 
 .btn-hapus:hover {
-    background-color: #B47788 !important;
-    border-color: #B47788 !important;
-    color: white !important;
+    background-color: #5F78A5;
+    border-color: #5F78A5;
+    color: white;
 }
-
 
 /* PAGINATION */
 .pagination .page-link {
-    color: #C47F92;
-    border-color: #F0D4DC;
+    color: #5F78A5;
+    border-color: #758db8;
 }
 
 .pagination .page-link:hover {
-    background-color: #FBE8ED;
-    color: #A85F73;
+    background-color: #E8EEF8;
+    color: #4E6792;
 }
 
 .pagination .active .page-link {
-    background-color: #E8A0B4;
-    border-color: #E8A0B4;
+    background-color: #758db8;
+    border-color: #758db8;
     color: white;
 }

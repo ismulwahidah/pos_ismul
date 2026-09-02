@@ -9,7 +9,7 @@
 
 <style>
     body {
-        background: linear-gradient(135deg, #B87589, #f1faee);
+        background: linear-gradient(135deg, #758db8, #f1faee);
         height: 100vh;
     }
 
@@ -22,7 +22,7 @@
     }
 
     .login-header {
-        background-color: #B87589;
+        background-color: #758db8;
         color: white;
         font-weight: bold;
         font-size: 1.3rem;
@@ -36,16 +36,16 @@
 
     .form-control {
         border-radius: 10px;
-        border: 1px solid #B87589;
+        border: 1px solid #758db8;
     }
 
     .form-control:focus {
-        border-color: #B87589;
+        border-color: #758db8;
         box-shadow: 0 0 0 0.2rem rgba(184, 117, 137, 0.25);
     }
 
     .btn-green {
-        background-color: #B87589;
+        background-color: #758db8;
         border: none;
         border-radius: 10px;
         width: 100%;
@@ -55,7 +55,7 @@
     }
 
     .btn-green:hover {
-        background-color: #B87589;
+        background-color: #758db8;
     }
 
     .badge {

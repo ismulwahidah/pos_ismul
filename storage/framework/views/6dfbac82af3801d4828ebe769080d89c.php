@@ -1,5 +1,6 @@
 
 
+
 <?php $__env->startSection('title', 'Users'); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -8,241 +9,239 @@
 
 <div class="card-body">
 
-```
-<div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
 
-    <div>
-        <h2 class="fw-bold text-dark mb-1">
-            <i class="bi bi-people-fill"></i> Manajemen Users
-        </h2>
+        <div>
+            <h2 class="fw-bold text-dark mb-1">
+                <i class="bi bi-people-fill"></i> Manajemen Users
+            </h2>
 
-        <small class="text-muted">
-            Kelola akun admin dan kasir
-        </small>
-    </div>
+            <small class="text-muted">
+                Kelola akun admin dan kasir
+            </small>
+        </div>
 
-    <a href="<?php echo e(route('admin.users.create')); ?>"
-       class="btn rounded-pill px-4"
-       style="background:#F8C8D8; color:#000; border:1px solid #E5AFC1;">
+        <a href="<?php echo e(route('admin.users.create')); ?>"
+           class="btn rounded-pill px-4"
+           style="background:#758db8; color:#fff; border:1px solid #5F78A5;">
 
-        <i class="bi bi-plus-circle"></i>
-        Tambah User
+            <i class="bi bi-plus-circle"></i>
+            Tambah User
 
-    </a>
-
-</div>
-
-
-
-
-<form action="<?php echo e(route('admin.users')); ?>" method="GET">
-
-    <div class="input-group mb-4">
-
-        <span class="input-group-text bg-white">
-            <i class="bi bi-search text-dark"></i>
-        </span>
-
-        <input
-            type="text"
-            name="search"
-            class="form-control"
-            placeholder="Cari nama atau email..."
-            value="<?php echo e(request('search')); ?>"
-        >
-
-        <button
-            class="btn"
-            style="background:#F8C8D8; color:#000; border:1px solid #E5AFC1;">
-
-            <i class="bi bi-search"></i>
-            Cari
-
-        </button>
+        </a>
 
     </div>
 
-</form>
+
+    
+
+    <form action="<?php echo e(route('admin.users')); ?>" method="GET">
+
+        <div class="input-group mb-4">
+
+            <span class="input-group-text bg-white">
+                <i class="bi bi-search text-dark"></i>
+            </span>
+
+            <input
+                type="text"
+                name="search"
+                class="form-control"
+                placeholder="Cari nama atau email..."
+                value="<?php echo e(request('search')); ?>"
+            >
+
+            <button
+                class="btn"
+                style="background:#758db8; color:#fff; border:1px solid #5F78A5;">
+
+                <i class="bi bi-search"></i>
+                Cari
+
+            </button>
+
+        </div>
+
+    </form>
 
 
+    
+
+    <div class="table-responsive">
+
+        <table class="table align-middle">
+
+            <thead>
+
+                <tr>
+
+                    <th class="text-dark">No</th>
+
+                    <th class="text-dark">Nama</th>
+
+                    <th class="text-dark">Email</th>
+
+                    <th class="text-dark">Role</th>
+
+                    <th class="text-dark" width="200">
+                        Aksi
+                    </th>
+
+                </tr>
+
+            </thead>
 
 
-<div class="table-responsive">
+            <tbody>
 
-    <table class="table align-middle">
+            <?php $__empty_1 = true; $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
 
-        <thead>
-
-            <tr>
-
-                <th class="text-dark">No</th>
-
-                <th class="text-dark">Nama</th>
-
-                <th class="text-dark">Email</th>
-
-                <th class="text-dark">Role</th>
-
-                <th class="text-dark" width="200">
-                    Aksi
-                </th>
-
-            </tr>
-
-        </thead>
-
-
-        <tbody>
-
-        <?php $__empty_1 = true; $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-
-            <tr>
-
-                
-
-                <td class="text-dark">
-                    <?php echo e($users->firstItem() + $loop->index); ?>
-
-                </td>
-
-
-                
-
-                <td class="fw-semibold text-dark">
-                    <?php echo e($user->name); ?>
-
-                </td>
-
-
-                
-
-                <td class="text-dark">
-                    <?php echo e($user->email); ?>
-
-                </td>
-
-
-                
-
-                <td>
-
-                    <?php if($user->role->name == 'admin'): ?>
-
-                        <span
-                            class="badge rounded-pill"
-                            style="background:#F8C8D8; color:#000;">
-
-                            Admin
-
-                        </span>
-
-                    <?php else: ?>
-
-                        <span
-                            class="badge rounded-pill"
-                            style="background:#D9D9D9; color:#000;">
-
-                            Kasir
-
-                        </span>
-
-                    <?php endif; ?>
-
-                </td>
-
-
-                
-
-                <td>
+                <tr>
 
                     
 
-                    <a
-                        href="<?php echo e(route('admin.users.edit', $user->id)); ?>"
-                        class="btn btn-sm me-1"
-                        style="
-                            background:#E8E8E8;
-                            color:#000;
-                            border:1px solid #BDBDBD;
-                        ">
+                    <td class="text-dark">
+                        <?php echo e($users->firstItem() + $loop->index); ?>
 
-                        <i class="bi bi-pencil-square"></i>
-                        Edit
-
-                    </a>
+                    </td>
 
 
                     
 
-                    <form
-                        action="<?php echo e(route('admin.users.destroy', $user)); ?>"
-                        method="POST"
-                        class="d-inline">
+                    <td class="fw-semibold text-dark">
+                        <?php echo e($user->name); ?>
 
-                        <?php echo csrf_field(); ?>
+                    </td>
 
-                        <?php echo method_field('DELETE'); ?>
 
-                        <button
-                            type="submit"
-                            onclick="return confirm('Yakin ingin menghapus user ini?')"
-                            class="btn btn-sm"
+                    
+
+                    <td class="text-dark">
+                        <?php echo e($user->email); ?>
+
+                    </td>
+
+
+                    
+
+                    <td>
+
+                        <?php if($user->role->name == 'admin'): ?>
+
+                            <span
+                                class="badge rounded-pill"
+                                style="background:#758db8; color:#fff;">
+
+                                Admin
+
+                            </span>
+
+                        <?php else: ?>
+
+                            <span
+                                class="badge rounded-pill"
+                                style="background:#D9D9D9; color:#000;">
+
+                                Kasir
+
+                            </span>
+
+                        <?php endif; ?>
+
+                    </td>
+
+
+                    
+
+                    <td>
+
+                        
+
+                        <a
+                            href="<?php echo e(route('admin.users.edit', $user->id)); ?>"
+                            class="btn btn-sm me-1"
                             style="
-                                background:#D9534F;
-                                color:#fff;
-                                border:1px solid #D9534F;
+                                background:#E8EEF8;
+                                color:#5F78A5;
+                                border:1px solid #C9D6EA;
                             ">
 
-                            <i class="bi bi-trash"></i>
-                            Hapus
+                            <i class="bi bi-pencil-square"></i>
+                            Edit
 
-                        </button>
-
-                    </form>
-
-                </td>
-
-            </tr>
+                        </a>
 
 
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                        
 
-            <tr>
+                        <form
+                            action="<?php echo e(route('admin.users.destroy', $user)); ?>"
+                            method="POST"
+                            class="d-inline">
 
-                <td
-                    colspan="5"
-                    class="text-center py-5">
+                            <?php echo csrf_field(); ?>
 
-                    <i
-                        class="bi bi-inbox fs-1 text-dark">
-                    </i>
+                            <?php echo method_field('DELETE'); ?>
 
-                    <p class="mt-2 text-muted">
-                        Tidak ada data user.
-                    </p>
+                            <button
+                                type="submit"
+                                onclick="return confirm('Yakin ingin menghapus user ini?')"
+                                class="btn btn-sm"
+                                style="
+                                    background:#D9534F;
+                                    color:#fff;
+                                    border:1px solid #D9534F;
+                                ">
 
-                </td>
+                                <i class="bi bi-trash"></i>
+                                Hapus
 
-            </tr>
+                            </button>
 
-        <?php endif; ?>
+                        </form>
 
-        </tbody>
+                    </td>
 
-    </table>
-
-</div>
-
-
-
-
-<div class="mt-4">
-
-    <?php echo e($users->links('pagination::bootstrap-5')); ?>
+                </tr>
 
 
-</div>
-```
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+
+                <tr>
+
+                    <td
+                        colspan="5"
+                        class="text-center py-5">
+
+                        <i
+                            class="bi bi-inbox fs-1 text-dark">
+                        </i>
+
+                        <p class="mt-2 text-muted">
+                            Tidak ada data user.
+                        </p>
+
+                    </td>
+
+                </tr>
+
+            <?php endif; ?>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    
+
+    <div class="mt-4">
+
+        <?php echo e($users->links('pagination::bootstrap-5')); ?>
+
+
+    </div>
 
 </div>
 
