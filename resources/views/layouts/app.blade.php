@@ -12,10 +12,10 @@
 
 <body class="bg-light">
 
-<!-- <nav class="navbar navbar-expand-lg shadow-sm" style="background:#2E7D32;">
+<!---<nav class="navbar navbar-expand-lg shadow-sm" style="background:#2E7D32;">
     <div class="container">
 
-        <a class="navbar-brand fw-bold text-white" href="{{ Route::has('dashboard') ? route('dashboard') : '#' }}">
+        <a class="navbar-brand fw-bold text-white" href="{{ Route::has('tentang') ? route('tentang') : '#' }}">
             🌿 POS
         </a>
 

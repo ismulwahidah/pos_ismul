@@ -36,5 +36,9 @@ Route::middleware('role:admin,kasir')->group(function () {
     Route::resource('/produk', ProdukController::class);
     Route::resource('/penjualan', PenjualanController::class);
     Route::resource('/itempenjualan', ItemPenjualanController::class);
+   Route::get('/tentang', function () {
+    return view('tentang'); // Disesuaikan dari 'tentang.index' ke 'tentang'
+})->name('tentang');
+
 });
 });
